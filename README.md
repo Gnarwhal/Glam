@@ -67,3 +67,6 @@ Naming is hard
 
 `Gnarwhal + Lambda`
 
+The irony is that Glam is quite far from glamorous. It is most kludgy.
+I suppose maybe that's something to work for. Have Glam live up to it's name. Or just change it's name because it's bad.
+
