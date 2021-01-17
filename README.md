@@ -4,7 +4,7 @@ Gnarwhal's Lambda Calculus Interpreter
 
 ## About
 
-A simple lambda calculus playground
+A simple lambda calculus playground  
 Either use the interactive shell or execute a script file
 
 ### The shell
@@ -14,7 +14,7 @@ The interactive shell is so bad :(
 Enter any valid expression and it will attempt to beta-reduce it. Or rather, I hope it beta-reduces it. I don't have any formal training, so I could have
 missed some gotchas when implementing reduction.
 
-Shell commands are prefixed by a `\`
+Shell commands are prefixed by a `\`  
 Current shell commands include:
 - `\q`, `\quit`, `\exit` -> Exit the shell
 - `\exec [script]` -> Execute a script file
@@ -24,8 +24,8 @@ Current shell commands include:
 
 The syntax used tries to be faithful to true lambda calculus.
 There are two main modifications.
-1. The `λ` symbol is not easy to type on any mainstream keyboard layouts that I'm familiar with, so `>` has been added as an alternative. λ is still accepted however. 
-2. Variable names are not exclusively single symbols; the are strings of symbols. As such all variables must be whitespace separated. 
+1. The `λ` symbol is not easy to type on any mainstream keyboard layouts that I'm familiar with, so `>` has been added as an alternative. `λ` is still accepted however. 
+2. Variable names are not exclusively single symbols; they are strings of symbols. As such all variables must be whitespace separated. 
 
 Variable names can be any sequence of symbols that don't include the reserved symbols `λ`, `>`, `.`, `(`, `)`, and whitespace characters.
 
@@ -33,17 +33,17 @@ Lambda functions can only take a single input, but nested lambdas can be syntact
 
 #### Examples
 
-Variable syntax
-`var`
+Variable syntax  
+`var`  
 
-Lambda syntax
-`>var.expr`
+Lambda syntax  
+`>var.expr`  
 
-Nested lambda syntax
-`>x.>y.>z.expr`
-`>x y z.expr`
+Nested lambda syntax  
+`>x.>y.>z.expr`  
+`>x y z.expr`  
 
-Ordering
+Ordering with parentheses  
 `(>x y.z) w`
 
 ### What is the Lambda Calculus?
