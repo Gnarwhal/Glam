@@ -306,14 +306,16 @@ class Ordering {
 }
 
 fun evaluate(src: String) {
-	val result = Expression.parse(src)
-	when (result) {
-		is Success -> {
-			println(result.expr.beta_normal())
-		}
-		is Err -> {
-			println(src)
-			println("${" ".repeat(result.index)}^ ${result.message}")
+	if (!src.startsWith("#")) {
+		val result = Expression.parse(src)
+		when (result) {
+			is Success -> {
+				println(result.expr.beta_normal())
+			}
+			is Err -> {
+				println(src)
+				println("${" ".repeat(result.index)}^ ${result.message}")
+			}
 		}
 	}
 }
